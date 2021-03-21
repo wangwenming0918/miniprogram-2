@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "宠物社区",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#AEEEEE",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "uni-fab": "/components/uni-fab/uni-fab"
+  }
+}

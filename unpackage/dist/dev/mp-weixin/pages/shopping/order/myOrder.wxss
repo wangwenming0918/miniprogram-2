@@ -1,0 +1,90 @@
+
+.order.data-v-c07304da{
+	margin: 10rpx;
+	padding: 10rpx;
+	border-radius: 10rpx;
+}
+.mid.data-v-c07304da{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	border: 1rpx solid #CDC9C9;
+	padding: 10rpx;
+	margin: 10rpx;
+	border-radius: 10rpx;
+}
+.head.data-v-c07304da{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	height: 80rpx;
+	border-bottom: 1rpx solid #ccc;
+}
+.head_img.data-v-c07304da{
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 30rpx;
+	margin: 5rpx;
+}
+.head_name.data-v-c07304da{
+	margin: 5rpx;
+	font-size: 40rpx;
+}
+.mid_content.data-v-c07304da{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	width: 700rpx;
+	margin: 20rpx 0;
+}
+.mid-content_img.data-v-c07304da{
+	margin: 10rpx;
+	width: 200rpx
+}
+.mid_title.data-v-c07304da{
+	margin: 10rpx;
+	width: 350rpx;
+	font-size: 30rpx;
+}
+.mid_price.data-v-c07304da{
+	margin: 10rpx;
+	width: 80rpx;
+	font-size: 24rpx;
+}
+.price.data-v-c07304da{
+	font-size: 35rpx;
+	text-align: right;
+	margin-right: 20rpx;
+	color: #8B8682;
+}
+.trading.data-v-c07304da{
+	font-size: 35rpx;
+	color: #FF4500;
+}
+.bottom.data-v-c07304da{
+	margin-left: 500rpx;
+	width: 180rpx;
+	height: 50rpx;
+	font-size: 35rpx;
+	text-align: center;
+	border: 1rpx solid #FF4500;
+	border-radius: 20rpx;
+	color: #FF4500;
+}
+.delete_order.data-v-c07304da{
+	margin-left: 500rpx;
+	width: 180rpx;
+	height: 50rpx;
+	font-size: 35rpx;
+	text-align: center;
+	border: 1rpx solid #838B8B;
+	border-radius: 20rpx;
+	color: #838B8B;
+}
+

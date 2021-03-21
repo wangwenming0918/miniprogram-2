@@ -1,0 +1,48 @@
+
+.goumai.data-v-0ddc447e{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.title.data-v-0ddc447e{
+	padding: 5rpx;
+	font-size: 50rpx;
+	color: #FFA500;
+}
+.price.data-v-0ddc447e{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	padding: 10rpx;
+}
+.button.data-v-0ddc447e{
+	margin-left: 300rpx;
+	background-color: #FF7F24;
+	color: #fff;
+	border-radius: 5rpx;
+}
+.parameter_title.data-v-0ddc447e{
+	/* width: 700rpx; */
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 10rpx;
+	background-color: #FFFAFA;
+	color: #FFD700;
+	font-size: 45rpx;
+}
+.parameter_info.data-v-0ddc447e{
+	/* width: 700rpx; */
+	padding: 10rpx;
+	border: 1rpx solid #999999;
+	color: #999999;
+}
+.back_top.data-v-0ddc447e{
+	border: 1rpx solid #999999;
+	color: #CDC9C9;
+	text-align: center;
+	height: 70rpx;
+}
+

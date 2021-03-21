@@ -1,0 +1,118 @@
+
+.head_title.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 20rpx;
+	font-size: 50rpx;
+	color: #FFA500;
+	border-bottom: 1rpx solid #ccc;
+}
+.head_mid.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+}
+.head_img.data-v-3bfa9da8{
+	width: 70rpx;
+	height: 70rpx;
+	border-radius: 35rpx;
+	margin: 10rpx;
+}
+.head_name.data-v-3bfa9da8{
+	font-size: 50rpx;
+	padding: 13rpx;
+}
+.heda_time.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-webkit-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+	padding: 20rpx;
+}
+.head_tex.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	margin: 20rpx;
+	color: #808080;
+}
+.but.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	padding-top: 4rpx;
+	margin: 20rpx;
+	width: 700rpx;
+	height: 60rpx;
+	border-radius: 10px;
+	border: 2rpx solid #EE1289;
+	background-color: #fff;
+}
+.text_main.data-v-3bfa9da8{
+	margin: 20rpx;
+}
+.text1.data-v-3bfa9da8{
+	border: 1rpx solid #8A2BE2;
+	width: 700rpx;
+	border-radius: 10rpx;
+}
+.text_but.data-v-3bfa9da8{
+	width: 700rpx;
+	height: 80rpx;
+	font-size: 35rpx;
+	background-color: #00BFFF;
+	color: #fff;
+}
+.buttom.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.kongbai.data-v-3bfa9da8{
+	width: 700rpx;
+	height: 20rpx;
+}
+.buttom_img.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin: 20rpx;
+	border-radius: 10px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	border: 2rpx solid #EE1289;
+	width: 700rpx;
+	height: 60rpx;
+	padding-top: 4rpx;
+}
+.buttom_img2.data-v-3bfa9da8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 30rpx;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	width: 700rpx;
+}
+

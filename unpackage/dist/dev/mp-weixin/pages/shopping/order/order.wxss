@@ -1,0 +1,107 @@
+
+.head.data-v-644d341f{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin: 10rpx;
+	border: 1rpx solid #CDC9C9;
+	border-radius: 10rpx;
+}
+.content.data-v-644d341f{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.img.data-v-644d341f{
+	width: 120rpx;
+	height: 100rpx;
+	
+	margin: 10rpx;
+}
+.text.data-v-644d341f{
+	font-size: 35rpx;
+}
+.mid.data-v-644d341f{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	border: 1rpx solid #CDC9C9;
+	padding: 10rpx;
+	margin: 10rpx;
+	border-radius: 10rpx;
+}
+.mid_head.data-v-644d341f{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	height: 80rpx;
+}
+.mid_head_img.data-v-644d341f{
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 30rpx;
+	margin: 5rpx;
+}
+.mid_head_name.data-v-644d341f{
+	margin: 5rpx;
+	font-size: 40rpx;
+}
+.mid_content.data-v-644d341f{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	width: 700rpx;
+	margin: 10rpx 0;
+}
+.mid-content_img.data-v-644d341f{
+	margin: 10rpx;
+	width: 200rpx
+}
+.mid_title.data-v-644d341f{
+	margin: 10rpx;
+	width: 350rpx;
+	font-size: 30rpx;
+}
+.mid_price.data-v-644d341f{
+	margin: 10rpx;
+	width: 80rpx;
+	font-size: 24rpx;
+}
+.input.data-v-644d341f{
+	margin-left: 20rpx;
+	border-bottom: 1rpx solid #ccc;
+}
+.mid_comment.data-v-644d341f{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	margin: 10rpx 0;
+	font-size: 37rpx;
+}
+.count_button.data-v-644d341f{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	width: 50rpx;
+	border: 1rpx solid  #CDC9C9;
+	border-radius: 6rpx;
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+}
+.totalPrice.data-v-644d341f{
+	color: #FF4500;
+}
+

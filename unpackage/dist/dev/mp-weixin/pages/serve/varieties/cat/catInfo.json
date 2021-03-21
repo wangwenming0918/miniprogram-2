@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "猫咪信息",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "wppeng-to": "/components/wppeng-top/wppeng-top"
+  }
+}

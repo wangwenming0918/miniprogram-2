@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "猫",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-search-bar": "/components/uni-search-bar/uni-search-bar"
+  }
+}

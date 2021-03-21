@@ -1,0 +1,25 @@
+
+.head.data-v-415a3cca{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin: 10rpx;
+}
+.content.data-v-415a3cca{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.img.data-v-415a3cca{
+	width: 120rpx;
+	height: 100rpx;
+	
+	margin: 10rpx;
+}
+.text.data-v-415a3cca{
+	font-size: 35rpx;
+	color: #CDC9C9;
+}
+

@@ -1,0 +1,191 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 头部固定 */
+.topnav.data-v-24f06b86{
+  position: fixed;
+  top: 0rpx;
+  left: 0;
+  z-index:99;
+  background: #fff;
+  padding: 3%;
+  width: 94%;
+  z-index:999;
+}
+.head.data-v-24f06b86{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	margin: 5rpx;
+}
+.head_input.data-v-24f06b86{
+	border: 1rpx solid #808080;
+	padding: 5rpx;
+	height: 70rpx;
+	width: 450rpx;
+}
+.head_img.data-v-24f06b86{
+	width: 70rpx;
+	height: 70rpx;
+	padding: 5rpx;
+}
+.head_button.data-v-24f06b86{
+	padding: 5rpx;
+	width: 120rpx;
+	font-size: 30rpx;
+}
+.item.data-v-24f06b86{
+	margin-top: 100rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	padding: 20rpx;
+	border-bottom: 1rpx solid #ccc;
+}
+.item_img.data-v-24f06b86{
+	
+	width: 680rpx;
+	height: 500rpx;
+	border-radius: 10rpx;
+}
+.item_title.data-v-24f06b86{
+	padding: 5rpx;
+	font-size: 49rpx;
+	color: #FFA500;
+	/* 隐藏多余字体 */
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.item_price.data-v-24f06b86{
+	text-align: right;
+	color: #FF4500;
+}
+.hide.data-v-24f06b86{
+	text-align: center;
+	color: #3F536E;
+	font-size: 35rpx;
+}
+

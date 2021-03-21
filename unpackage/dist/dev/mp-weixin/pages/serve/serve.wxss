@@ -1,0 +1,22 @@
+
+.cont.data-v-0b7ec4a6{
+	margin: 30rpx 15rpx;
+	background-color: #F0FFFF;
+}
+.button.data-v-0b7ec4a6{
+	margin-bottom: 30rpx;
+	border-radius: 20rpx;
+	font-size: 50rpx;
+	color: #FFFAFA;
+	border: 2rpx solid #fff;
+}
+.hospital.data-v-0b7ec4a6{
+	background-color: #FF0000;
+}
+.memorandum.data-v-0b7ec4a6{
+	background-color: #00FF00;
+}
+.varieties.data-v-0b7ec4a6{
+	background-color: #0000FF;
+}
+

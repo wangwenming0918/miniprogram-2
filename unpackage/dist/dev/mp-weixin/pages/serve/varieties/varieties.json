@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "品种查询",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control",
+    "dog": "/pages/serve/varieties/dog/dog",
+    "cat": "/pages/serve/varieties/cat/cat"
+  }
+}

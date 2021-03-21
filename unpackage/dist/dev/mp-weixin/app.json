@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/community/home",
+    "pages/me/me",
+    "pages/shopping/shopping",
+    "pages/serve/serve",
+    "pages/community/communityInfo",
+    "pages/shopping/shoppingInfo/shoppingInfo",
+    "pages/shopping/order/order",
+    "pages/shopping/order/myOrder",
+    "pages/serve/memorandum/memorandum",
+    "pages/serve/varieties/varieties",
+    "pages/me/address/address",
+    "pages/me/address/updateAddress/updateAddress",
+    "pages/community/publish/publish",
+    "pages/community/publish/mypublish",
+    "pages/serve/varieties/dog/dog",
+    "pages/serve/varieties/dog/dogInfo",
+    "pages/serve/varieties/cat/cat",
+    "pages/serve/varieties/cat/catInfo"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "宠物社区",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/community/home",
+        "iconPath": "static/images/icons/home1.png",
+        "selectedIconPath": "static/images/icons/home2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "iconPath": "static/images/icons/shopping1.png",
+        "selectedIconPath": "static/images/icons/shopping2.png",
+        "text": "商店"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/images/icons/my.png",
+        "selectedIconPath": "static/images/icons/my2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

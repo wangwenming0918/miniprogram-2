@@ -1,0 +1,40 @@
+
+.dog_body.data-v-15c72b52{
+	margin: 5rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.dog.data-v-15c72b52{
+	width: 360rpx;
+	margin: 10rpx 5rpx;
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	        flex-grow:1;
+}
+.img.data-v-15c72b52{
+	padding: 5rpx 5rpx 0 5rpx;
+	width: 350rpx;
+	height: 250rpx;
+}
+.name.data-v-15c72b52{
+	width: 350rpx;
+	height: 50rpx;
+	font-size: 35rpx;
+	padding-left: 5rpx;
+	text-align: center;
+	background-color: #EEE9E9;
+}
+.dog_body.data-v-15c72b52::after{
+		content: '';
+		-webkit-box-flex: 9;
+		-webkit-flex-grow: 9;
+		        flex-grow: 9;
+}
+
+

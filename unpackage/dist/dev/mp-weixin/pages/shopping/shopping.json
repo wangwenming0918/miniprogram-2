@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商店",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#AEEEEE",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "uni-search-bar": "/components/uni-search-bar/uni-search-bar"
+  }
+}

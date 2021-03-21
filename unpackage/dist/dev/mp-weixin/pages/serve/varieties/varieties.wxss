@@ -1,0 +1,212 @@
+
+.dog_body.data-v-15c72b52{
+	margin: 5rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.dog.data-v-15c72b52{
+	width: 360rpx;
+	margin: 10rpx 5rpx;
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	        flex-grow:1;
+}
+.img.data-v-15c72b52{
+	padding: 5rpx 5rpx 0 5rpx;
+	width: 350rpx;
+	height: 250rpx;
+}
+.name.data-v-15c72b52{
+	width: 350rpx;
+	height: 50rpx;
+	font-size: 35rpx;
+	padding-left: 5rpx;
+	text-align: center;
+	background-color: #EEE9E9;
+}
+.dog_body.data-v-15c72b52::after{
+		content: '';
+		-webkit-box-flex: 9;
+		-webkit-flex-grow: 9;
+		        flex-grow: 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 头部固定 */
+.topnav.data-v-3f9a488b{
+  position: fixed;
+  top: 0rpx;
+  left: 0;
+  z-index:99;
+  background: #fff;
+  margin-top: 100rpx;
+  padding: 3%;
+  width: 94%;
+  z-index:999;
+}
+.cat_body.data-v-3f9a488b{
+	margin: 5rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.cat.data-v-3f9a488b{
+	width: 360rpx;
+	margin: 10rpx 5rpx;
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	        flex-grow:1;
+}
+.img.data-v-3f9a488b{
+	padding: 5rpx 5rpx 0 5rpx;
+	width: 350rpx;
+	height: 250rpx;
+}
+.name.data-v-3f9a488b{
+	width: 350rpx;
+	height: 50rpx;
+	font-size: 35rpx;
+	padding-left: 5rpx;
+	text-align: center;
+	background-color: #EEE9E9;
+}
+.cat_body.data-v-3f9a488b::after{
+		content: '';
+		-webkit-box-flex: 9;
+		-webkit-flex-grow: 9;
+		        flex-grow: 9;
+}
+
+
+
+.home_tab_title.data-v-caae0958{
+	position: relative;
+}
+.title_inner.data-v-caae0958{
+	width: 60%;
+	margin: 0 auto;
+}
+.iconfont.data-v-caae0958{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	right: 5%;
+}
+
