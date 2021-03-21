@@ -19,19 +19,45 @@
                 "navigationBarTitleText": "我的",
                 "enablePullDownRefresh": false
             }
-            
         }
+		,{
+		    "path" : "pages/me/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "登录",
+		        "enablePullDownRefresh": false
+		    }
+		}
+		,{
+		    "path" : "pages/me/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "注册",
+		        "enablePullDownRefresh": false
+		    }
+		}
         ,{
             "path" : "pages/shopping/shopping",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "商店",
+                // "navigationBarTitleText": "商店",
                 "enablePullDownRefresh": true,
                 "backgroundColor":"#AEEEEE",
                 "backgroundTextStyle":"light"
             }
             
         }
+		,{
+		    "path" : "pages/shopping/shoppingClass",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "商店",
+		        "enablePullDownRefresh": true,
+		        "backgroundColor":"#AEEEEE",
+		        "backgroundTextStyle":"light"
+		    }
+		    
+		}
         ,{
             "path" : "pages/serve/serve",
             "style" :                                                                                    
@@ -83,11 +109,20 @@
             "path" : "pages/serve/memorandum/memorandum",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "备忘录",
+                "navigationBarTitleText": "提醒时间",
                 "enablePullDownRefresh": false
             }
             
         }
+		,{
+		    "path" : "pages/serve/memorandum/remind",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "备忘录",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
         ,{
             "path" : "pages/serve/varieties/varieties",
             "style" :                                                                                    
@@ -185,11 +220,17 @@
 	        "selectedIconPath": "static/images/icons/home2.png",
 			"text": "首页"
 	    }, {
-	        "pagePath": "pages/shopping/shopping",
+	        "pagePath": "pages/shopping/shoppingClass",
 	        "iconPath": "static/images/icons/shopping1.png",
 	        "selectedIconPath": "static/images/icons/shopping2.png",
 	        "text": "商店"
 	    },
+		{
+		    "pagePath": "pages/serve/serve",
+		    "iconPath": "static/images/icons/server1.png",
+		    "selectedIconPath": "static/images/icons/server2.png",
+		    "text": "服务"
+		},
 		{
 		    "pagePath": "pages/me/me",
 		    "iconPath": "static/images/icons/my.png",

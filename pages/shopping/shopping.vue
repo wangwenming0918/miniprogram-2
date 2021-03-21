@@ -12,9 +12,14 @@
 		<!-- 商品信息 -->
 		<view class="item">
 			<navigator style="margin-bottom: 40rpx;" v-for="(goods,index) in commodity" :key="index" :url="'./shoppingInfo/shoppingInfo?id='+goods.id">
-				<image lazy-load="true" class="item_img" :src="goods.img"></image>
-				<view class="item_title">{{goods.title}}</view>
-				<view class="item_price">￥{{goods.price}}</view>
+				<view class="item1">
+					<image lazy-load="true" class="item_img" :src="goods.img"></image>
+					<view class="item2">
+						<view class="item_title"><p>{{goods.title}}</p></view>
+						<view class="item_price">￥{{goods.price}}</view>
+					</view>
+				</view>
+				
 			</navigator>
 		</view>
 	</view>
@@ -26,14 +31,16 @@
 		components:{uniSearchBar},
 		data() {
 			return {
-				commodity: [],
+				commodity: [
+				],
 				params: {
 					limit: 10,
 					skip: 0,
 					search: ''
 				},
 				scrollTop: 0,
-				isShow: true
+				isShow: true,
+				name: '',
 			}
 		},
 		onPullDownRefresh(){
@@ -55,8 +62,15 @@
 				})
 			}
 		},
-		onLoad() {
+		onLoad(option) {
+			this.name = option.name
+			this.params.search =this.name
 			this.getcommodity()
+		},
+		onReady() {
+			uni.setNavigationBarTitle({
+				title:this.name
+			})
 		},
 		methods: {
 			search(res) {
@@ -88,13 +102,13 @@
 				})
 			},
 		},
-		onPageScroll(e) { 
-			if(this.scrollTop>e.scrollTop){
-				this.isShow = true
-			}else{
-				this.isShow = false
-			}
-			this.scrollTop = e.scrollTop
+		onPageScroll(e) { //nvue暂不支持滚动监听，可用bindingx代替
+		if(this.scrollTop>e.scrollTop){
+			this.isShow = true
+		}else{
+			this.isShow = false
+		}
+		this.scrollTop = e.scrollTop
 		}
 	}
 </script>
@@ -135,16 +149,24 @@
 	}
 	
 	.item{
-		margin-top: 100rpx;
+		margin-top: 120rpx;
 		display: flex;
 		flex-wrap: wrap;
 		padding: 20rpx;
 		border-bottom: 1rpx solid #ccc;
 	}
+	.item1{
+		display: flex;
+		width: 720rpx;
+	}
+	.item2{
+		flex-wrap: wrap;
+		width: 450rpx;
+	}
 	.item_img{
 		
-		width: 680rpx;
-		height: 500rpx;
+		width: 280rpx;
+		height: 250rpx;
 		border-radius: 10rpx;
 	}
 	.item_title{
@@ -152,17 +174,33 @@
 		font-size: 49rpx;
 		color: #FFA500;
 		// 隐藏多余字体
+		
 		text-overflow: ellipsis;
 		overflow: hidden;
-		white-space: nowrap;
+		/* white-space: nowrap; */
+		height: 190rpx;
 	}
 	.item_price{
-		text-align: right;
+		text-align: left;
 		color: #FF4500;
+		height: 30rpx;
 	}
 	.hide{
 		text-align: center;
 		color: #3F536E;
 		font-size: 35rpx;
+	}
+	p{
+		/* -webkit-line-clamp: 3;
+		word-wrap: break-word;
+		  word-break: break-all;
+		  overflow: hidden; */
+		 /* width: 450rpx;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+		  display: -webkit-box;
+		  	-webkit-box-orient: vertical;
+		  	-webkit-line-clamp: 3; */
+		  	
 	}
 </style>

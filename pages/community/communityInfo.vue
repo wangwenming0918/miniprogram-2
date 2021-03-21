@@ -1,20 +1,28 @@
 <template>
 	<view style="margin: 10rpx;">
+		<!-- 轮播图 -->
+		<view>
+			<swiper style="height: 700rpx;padding-left: 80rpx;padding-right: 80rpx;"  indicator-dots autoplay interval="2000" duration="500">
+				<swiper-item v-for="(img,index) in communityinfo.imgs" :key="index">
+					<image :src="img.src"></image>
+				</swiper-item>
+			</swiper>
+		</view>
 		<!-- 基本信息与发表内容的显示 -->
 		<view>
-			<view class="head_title">{{communityinfo.title}}</view>
 			<view class="head_mid">
 				<image class="head_img" :src="communityinfo.headSrc"></image>
 				<view class="head_name">{{communityinfo.name}}</view>
 			</view>
-			<view class="heda_time">发表时间：{{communityinfo.time | dateStr('YYYY年MM月DD日')}}</view>
+			<view class="head_title">{{communityinfo.title}}</view>
 			<view class="head_text">
-			<text selectable>
-				{{communityinfo.content}}
-			</text>
+				<text selectable>
+					{{communityinfo.content}}
+				</text>
 			</view>
+			<view class="heda_time">{{communityinfo.time | dateStr('YYYY年MM月DD日')}}</view>
 		</view>
-		
+
 		<!-- 评论模块 -->
 		<view >
 			<view class="but" @click="comment">评论</view>
@@ -23,15 +31,15 @@
 			<!-- 评论区 -->
 			<view class="text_main">
 				<view>
-				<textarea rows="3" class="text1" 
-				adjust-position @confirm="send" confirm-type="done"
-				v-model="textValue" placeholder="请输入140字以内的评论内容..." />
+				<textarea rows="3" class="text1"
+						  adjust-position @confirm="send" confirm-type="done"
+						  v-model="textValue" placeholder="请输入140字以内的评论内容..." />
 				</view>
 				<view style="margin-top: 20rpx;">
 					<button class="text_but" type="default" @click="send">发表评论</button>
 				</view>
 			</view>
-			
+
 			<!-- 评论信息显示 -->
 			<view class="text_main" v-for="(comment,index) in comments" :key="index">
 				<view style="color: #007AFF;">{{comment.name}} 评论：</view>
@@ -40,14 +48,6 @@
 			</view>
 		</view>
 		<view class="kongbai"></view>
-		
-		<!-- 图片模块 -->
-		<view class="buttom">
-			<view class="buttom_img" @click="display = !display" >图片展示</view>
-			<view v-show="display" v-for="(img, index) in communityinfo.imgs" :key="index">
-				<image lazy-load="true" class="buttom_img2" mode="aspectFill" :src="img.src"></image>
-			</view>
-		</view>
 	</view>
 </template>
 
@@ -87,7 +87,7 @@
 			}
 			this.getImages();
 			uni.getStorage({
-			    key: 'wxUserInfo',
+			    key: 'userInfo',
 			    success: (res) => {
 					this.nickName =res.data.nickName
 			    }

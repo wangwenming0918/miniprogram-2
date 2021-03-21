@@ -1,5 +1,6 @@
 <template>
-	<view v-if="isHide">
+	<!-- <view v-if="isHide"> -->
+	<view v-if="false">
 	  <view v-if="canIUse">
 	    <view class='header'>
 	      <image src='../../static/weixin.png'></image>
@@ -19,8 +20,21 @@
 	
 	<view v-else>
 	  <view class="userinfo">
-	      <image bindtap="bindViewTap" class="userinfo-avatar" :src="userInfo.avatarUrl" background-size="cover"></image>
-	      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+			  <!-- bindtap="bindViewTap" -->
+			  <image  class="userinfo-avatar" src="../../static/images/icons/head.png" background-size="cover"></image>
+			  <view class="uName">
+				  <view style="text-align: center;">
+					  <text class="userinfo-nickname">{{userInfo.userName}}</text>
+				  </view style="text-align: center;">
+				  <view>
+					  <text class="editZiliao">编辑资料</text>
+				  </view>
+				  
+			  </view>
+			  <view class="detail3">
+			    <text>></text>
+			  </view>
+	      
 	  </view>
 	
 	  <view class="hr"></view>
@@ -51,12 +65,12 @@
 	  <view class="line"></view>
 	
 	
-	  <navigator url="../serve/serve" class='item'>
+	<!--  <navigator url="../serve/serve" class='item'>
 	    <view class="title" bindtap="chaxun">服务</view>
 	    <view class="detail2">
 	      <text> ></text>
 	    </view>
-	  </navigator>
+	  </navigator> -->
 	  <view class="line"></view>
 
 	  <view class="hr"></view>
@@ -68,10 +82,24 @@
 		data() {
 			return {
 				userInfo: {},
-				canIUse: wx.canIUse('button.open-type.getUserInfo'),
-				isHide: false,
+				// canIUse: wx.canIUse('button.open-type.getUserInfo'),
+				// isHide: false,
 				userData: {}
 			}
+		},
+		onLoad() {
+			
+		uni.getStorage({
+		    key: 'loginUser',
+		    success: (res) => {
+					this.userInfo = res.data
+			},
+			fail:(res)=> {
+				uni.reLaunch({
+					url:"./login"
+				})
+			}
+		});	
 		},
 		methods: {
 			bindGetUserInfo (e) {
@@ -126,6 +154,7 @@
 				})
 			}
 		},
+		/*
 		onLoad() {
 			var that = this
 			wx.getSetting({
@@ -137,10 +166,12 @@
 					  	key: 'wxUserInfo',
 					  	data: res.userInfo
 					  }),
+					  //info = res.userInfo
+					  //App.globalData.userInfo = res.userInfo
 			          that.userInfo = res.userInfo,
 			          wx.login({
 			            success: res => {
-							this.saveuser();
+							// this.saveuser();
 			            }
 			          });
 			        }
@@ -151,16 +182,18 @@
 			  }
 			});
 		}
+		*/
 	}
 </script>
 
 <style scoped>
 	.userinfo {
 	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
+	  /* flex-direction: row; */
+	  /* align-items: center; */
+	  flex-wrap: nowrap;
 	  background: #eb6161;
-	  width: 100%;
+	  /* width: 100%; */
 	  height: 300rpx;
 	}
 
@@ -232,9 +265,25 @@
 	  line-height: 50px;
 	  color: #888;
 	}
+	.detail3 {
+	  font-size: 20px;
+	  position: absolute;
+	  right: 10px;
+	  height: 70px;
+	  line-height: 70px;
+	  color: #000;
+	}
 
 	.line {
 	  border: 1px solid #ccc;
 	  opacity: 0.2;
+	}
+	.uName{
+		flex-wrap: wrap;
+		padding-top: 50rpx;
+	}
+	.editZiliao{
+		font-size: 35rpx;
+		color: #90EE90;
 	}
 </style>

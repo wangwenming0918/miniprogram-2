@@ -4,6 +4,9 @@
 			备忘录内容
 		</view>
 		<view class="text">
+			<input type="text" v-model="remindTitle" placeholder="请输入主题" />
+		</view>
+		<view class="text">
 			<textarea v-model="textValue" placeholder="请输入要提醒的内容"></textarea>
 		</view>
 		<view class="uni-title time" @click="change_time">
@@ -67,6 +70,7 @@
 			    minutes.push(i)
 			}
             return {
+				remindTitle: '',
                 title: 'picker-view',
                 years,
                 year,
@@ -86,7 +90,15 @@
 				textValue: '',
 				reminderTime: 0,
 				innerAudioContext: uni.createInnerAudioContext(),
-                indicatorStyle: `height: ${Math.round(uni.getSystemInfoSync().screenWidth/(750/100))}px;`
+                indicatorStyle: `height: ${Math.round(uni.getSystemInfoSync().screenWidth/(750/100))}px;`,
+				obj:{
+					id:undefined,
+					createTime:'',
+					title: '',
+					desc:'',
+					surplusTime: '',
+					remindTime:''
+				},
             }
         },
         methods: {
@@ -162,10 +174,6 @@
 				if(minute1 !== 0){
 					this.reminderTime =this.reminderTime+ minute1*60*1000
 				}
-				if(this.reminderTime < 0){
-					uni.showToast({title:'选择的时间已过，不能作为提醒时间'})
-					return
-				}
 				uni.showToast({title:`${day1}天${hour1}小时${minute1}分后提醒您`,icon:'none',duration:2000})
 				let closetime = setTimeout(()=>{
 					clearTimeout(closetime)
@@ -188,6 +196,35 @@
 					// })
 					
 				},this.reminderTime-second*1000);
+				
+				this.obj.title = this.remindTitle;
+				this.obj.desc = this.textValue;
+				this.obj.remindTime = this.year+'年'+this.month+'月'+this.day+'日'+this.hour+'时'+this.minute+'分';
+				this.obj.surplusTime=`剩余${day1}天${hour1}小时${minute1}分钟`;
+				
+				this.request({
+					url: this.$Url+'/memorandum/save',
+					data: this.obj,
+					method: "POST"
+				}).then(result=>{
+					if(result.data.length>1){
+						uni.showToast({
+						    title: '添加成功',
+						    duration: 1000
+						});
+					}else{
+						uni.showToast({
+						    title: '获取数据失败',
+						    duration: 2000
+						});
+					}
+					
+				}).catch(err =>{
+					uni.showToast({
+					    title: '获取数据失败',
+					    duration: 2000
+					});
+				})
 			}
         }
     }
